@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: #00695c;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  background: #e0f2f1;
+  justify-content: center;
+}
+
+.tab-button {
+  padding: 10px 15px;
+  cursor: pointer;
+  border: none;
+  background: #b2dfdb;
+  margin: 5px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.tab-button.active {
+  background: #00796b;
+  color: white;
+}
+
+.tab-content {
+  display: none;
+  padding: 1rem;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+main img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1rem;
+}
+
+ul, ol {
+  margin-left: 1.5rem;
+}

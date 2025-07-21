@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Green Energy Systems</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #007B5E;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #004d3a;
+      padding: 10px;
+      text-align: center;
+    }
+    nav button, nav a.pdf-link {
+      background: none;
+      color: #fff;
+      border: none;
+      margin: 0 5px;
+      font-size: 16px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    nav button:hover, nav a.pdf-link:hover {
+      text-decoration: underline;
+    }
+    .container {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+      background: white;
+    }
+    .tab-content {
+      display: none;
+    }
+    .tab-content.active {
+      display: block;
+    }
+    .pdf-container {
+      margin-top: 20px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      display: none;
+    }
+    .pdf-viewer {
+      width: 100%;
+      height: 500px;
+      border: none;
+    }
+    .view-pdf-button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 15px;
+      transition: background-color 0.3s;
+    }
+    .view-pdf-button:hover {
+      background-color: #45a049;
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Green Energy Systems</h1>
+</header>
+
+<nav class="tabs">
+  <button class="tab-button active" data-tab="Syllabus">Syllabus</button>
+  <button class="tab-button" data-tab="UNIT-I">UNIT-I</button>
+  <button class="tab-button" data-tab="UNIT-II">UNIT-II</button>
+  <button class="tab-button" data-tab="UNIT-III">UNIT-III</button>
+  <button class="tab-button" data-tab="UNIT-IV">UNIT-IV</button>
+  <button class="tab-button" data-tab="UNIT-V">UNIT-V</button>
+  <button class="tab-button" data-tab="Mid1">Mid-1 QBank</button>
+  <button class="tab-button" data-tab="Mid2">Mid-2 QBank</button>
+  <button class="tab-button" data-tab="University">University Paper</button>
+  <a class="pdf-link" href="Renewable_Energy_Tutorials.pdf" target="_blank">📄 View/Download Full PDF</a>
+</nav>
+
+<main class="container">
+
+  <!-- Syllabus -->
+  <div class="tab-content active" id="Syllabus">
+    <h2>Syllabus</h2>
+    <ul>
+      <li><b>Unit-I:</b> Solar Radiation, PV Systems, Collectors, Instruments</li>
+      <li><b>Unit-II:</b> Solar Storage, Wind Energy Systems</li>
+      <li><b>Unit-III:</b> Biomass, Geothermal, Ocean Energy</li>
+      <li><b>Unit-IV:</b> Energy Efficient Systems (Electrical & Mechanical)</li>
+      <li><b>Unit-V:</b> Green Manufacturing, Buildings, Environmental Impact</li>
+    </ul>
+    <button class="view-pdf-button" data-pdf="Syllabus.pdf">View Syllabus PDF</button>
+    <div class="pdf-container"><iframe class="pdf-viewer" src="" title="PDF Viewer"></iframe></div>
+  </div>
+
+  <!-- UNIT-I -->
+  <div class="tab-content" id="UNIT-I">
+    <h2>UNIT-I: Solar Radiation</h2>
+    <p><strong>Solar Constant:</strong> 1367 W/m² – amount of solar radiation at Earth’s atmosphere.</p>
+    <p><strong>Declination Angle (δ):</strong> δ = 23.45° × sin[(360/365) × (284 + n)]</p>
+    <p><strong>Hour Angle (H):</strong> H = 15° × (Local Solar Time − 12)</p>
+    <p><strong>Solar Zenith Angle (θz):</strong> Angle between sun’s rays and vertical line.</p>
+    <p><strong>Instruments:</strong></p>
+    <ul>
+      <li>Pyranometer – global radiation</li>
+      <li>Pyrheliometer – direct beam radiation</li>
+      <li>Sunshine Recorder – sunshine duration</li>
+    </ul>
+    <p><strong>Example:</strong> H<sub>t</sub> = H<sub>o</sub> × cos(θ)</p>
+    <button class="view-pdf-button" data-pdf="UNIT-I.pdf">View UNIT-I PDF</button>
+    <div class="pdf-container"><iframe class="pdf-viewer" src=""></iframe></div>
+  </div>
+
+  <!-- UNIT-II -->
+  <div class="tab-content" id="UNIT-II">
+    <h2>UNIT-II: Solar Storage & Wind</h2>
+    <p><strong>Storage:</strong></p>
+    <ul>
+      <li>Thermal: water, air, phase change materials</li>
+      <li>Electrical: batteries, supercapacitors</li>
+      <li>Mechanical: flywheels, hydro, compressed air</li>
+    </ul>
+    <p><strong>Power in Wind:</strong> P = 0.5 × ρ × A × V³ × Cp</p>
+    <p><strong>Types:</strong> HAWT, VAWT</p>
+    <button class="view-pdf-button" data-pdf="UNIT-II.pdf">View UNIT-II PDF</button>
+    <div class="pdf-container"><iframe class="pdf-viewer" src=""></iframe></div>
+  </div>
+
+  <!-- UNIT-III -->
+  <div class="tab-content" id="UNIT-III">
+    <h2>UNIT-III: Biomass, Geothermal, Ocean</h2>
+    <p><strong>Biomass:</strong> Wood, waste, dung</p>
+    <p><strong>Techniques:</strong></p>
+    <ul>
+      <li>Thermochemical: combustion, pyrolysis</li>
+      <li>Biochemical: fermentation, digestion</li>
+    </ul>
+    <p><strong>Geothermal:</strong> Heat from Earth, 25–30 °C/km</p>
+    <p><strong>Ocean:</strong> Tidal, Wave, OTEC</p>
+    <button class="view-pdf-button" data-pdf="UNIT-III.pdf">View UNIT-III PDF</button>
+    <div class="pdf-container"><iframe class="pdf-viewer" src=""></iframe></div>
+  </div>
+
+  <!-- UNIT-IV -->
+  <div class="tab-content" id="UNIT-IV">
+    <h2>UNIT-IV: Energy Efficient Systems</h2>
+    <p><strong>Fuel Cells:</strong> 2H₂ + O₂ → 2H₂O + Energy</p>
+    <p>Types: PEMFC, SOFC, MCFC, AFC</p>
+    <p>CHP: Combined Heat & Power</p>
+    <p>Efficient appliances, Smart meters</p>
+    <button class="view-pdf-button" data-pdf="UNIT-IV.pdf">View UNIT-IV PDF</button>
+    <div class="pdf-container"><iframe class="pdf-viewer" src=""></iframe></div>
+  </div>
+
+  <!-- UNIT-V -->
+  <div class="tab-content" id="UNIT-V">
+    <h2>UNIT-V: Green Buildings & Manufacturing</h2>
+    <ul>
+      <li>Passive design, rainwater harvesting</li>
+      <li>LEED/BEE certified</li>
+      <li>Recycled materials, solar production</li>
+    </ul>
+    <p>Assessment Tools: LCA, Carbon Footprint</p>
+    <button class="view-pdf-button" data-pdf="UNIT-V.pdf">View UNIT-V PDF</button>
+    <div class="pdf-container"><iframe class="pdf-viewer" src=""></iframe></div>
+  </div>
+
+  <!-- Mid1 -->
+  <div class="tab-content" id="Mid1">
+    <h2>Mid-1 Question Bank</h2>
+    <button class="view-pdf-button" data-pdf="Mid1.pdf">View Mid-1 PDF</button>
+    <div class="pdf-container"><iframe class="pdf-viewer" src=""></iframe></div>
+  </div>
+
+  <!-- Mid2 -->
+  <div class="tab-content" id="Mid2">
+    <h2>Mid-2 Question Bank</h2>
+    <button class="view-pdf-button" data-pdf="Mid2.pdf">View Mid-2 PDF</button>
+    <div class="pdf-container"><iframe class="pdf-viewer" src=""></iframe></div>
+  </div>
+
+  <!-- University -->
+  <div class="tab-content" id="University">
+    <h2>University Question Paper</h2>
+    <button class="view-pdf-button" data-pdf="University.pdf">View University PDF</button>
+    <div class="pdf-container"><iframe class="pdf-viewer" src=""></iframe></div>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2025 Green Energy Systems | VIIT Dept. of IT</p>
+</footer>
+
+<script>
+  document.querySelectorAll('.tab-button').forEach(button => {
+    button.addEventListener('click', () => {
+      const tabId = button.getAttribute('data-tab');
+      const tabContent = document.getElementById(tabId);
+      if (!tabContent) return;
+
+      document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+
+      button.classList.add('active');
+      tabContent.classList.add('active');
+    });
+  });
+
+  document.querySelectorAll('.view-pdf-button').forEach(button => {
+    button.addEventListener('click', e => {
+      const pdfFile = e.target.getAttribute('data-pdf');
+      const pdfContainer = e.target.nextElementSibling;
+      const pdfViewer = pdfContainer?.querySelector('.pdf-viewer');
+      if (!pdfViewer) return;
+      if (pdfContainer.style.display === 'block') {
+        pdfContainer.style.display = 'none';
+      } else {
+        pdfViewer.src = pdfFile;
+        pdfContainer.style.display = 'block';
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
